@@ -4,7 +4,7 @@
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   background-color: #393F4C;
-  min-height: 180vh;
+  min-height: 100vh;
   padding: 5vh;
 }
 
@@ -34,14 +34,6 @@ button{
   margin-left: 5%;
 }
 
-.icons{
-  display:flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 480px;
-  margin-right: 20px;
-}
-
 .inputArea{
   display: flex;
   justify-content: center;
@@ -49,42 +41,9 @@ button{
   margin-bottom: 5vh;
 }
 
-.resultsContainer{
-  color: whitesmoke;
-  font-size: 2em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 5vh;
-  height: 400px;
-}
-
-.letterBox{
-   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 800px;
-  animation: fadein 4s forwards;
-}
-
-.letter{
-  margin: 30px;
-}
-
 .title{
   font-weight: bolder;
     color: #29F89C;
-}
-
-.count{
-  font-size: 0.8em
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 
 /* stop old css here */
@@ -113,25 +72,4 @@ select{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-.customSelect{
-  position: relative;
-  width: 200px;
-      /* border: 1px solid #ccc; */
-    /* width: 120px; */
-    /* overflow: hidden; */
-    /* background: whitesmoke; */
-}
-
-.customSelect select{
-  /* display: none; */
-    /* padding: 15px 30px 15px 30px; */
-    /* width: 100%; */
-    /* border: none;
-    box-shadow: none;
-    background: whitesmoke;
-    background-image: none;
-    border-radius: 0px;
-    -webkit-appearance: none; */
 }
