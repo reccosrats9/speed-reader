@@ -1,32 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize|Open+Sans');
+
 .App {
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #393F4C;
+  min-height: 180vh;
+  padding: 5vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.title{
+  font-family: 'Electrolize', sans-serif;
+  font-size: 6em;
+  color: #29F89C;
+  margin-bottom: 5vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+textarea{
+  width: 45vw;
+  border: none;
+  background-color: whitesmoke;
+  padding: 5px 15px 5px 15px;
+  font-size: 1em;
+  margin-left: 15%;
+}
+
+button{
+  padding: 7px 12px 7px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #29F89C;
+  color: #393F4C;
+  font-size: 1.25em;
+  margin-left: 5%;
+}
+
+.icons{
+  display:flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  height: 480px;
+  margin-right: 20px;
+}
+
+.inputArea{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-bottom: 5vh;
 }
 
-.App-link {
-  color: #61dafb;
+.resultsContainer{
+  color: whitesmoke;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5vh;
+  height: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.letterBox{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 800px;
+  animation: fadein 4s forwards;
+}
+
+.letter{
+  margin: 30px;
+}
+
+.title{
+  font-weight: bolder;
+    color: #29F89C;
+}
+
+.count{
+  font-size: 0.8em
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* stop old css here */
+
+.hidden{
+  display:none
+}
+
+.word{
+  color: whitesmoke;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 30vh;
+}
+
+.small{
+  font-size: 2em;
+  margin-top: 2vh;
+}
+select{
+  margin: 3vh;
+}
+
+.speedAndPause{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.customSelect{
+  position: relative;
+  width: 200px;
+      /* border: 1px solid #ccc; */
+    /* width: 120px; */
+    /* overflow: hidden; */
+    /* background: whitesmoke; */
+}
+
+.customSelect select{
+  /* display: none; */
+    /* padding: 15px 30px 15px 30px; */
+    /* width: 100%; */
+    /* border: none;
+    box-shadow: none;
+    background: whitesmoke;
+    background-image: none;
+    border-radius: 0px;
+    -webkit-appearance: none; */
 }
