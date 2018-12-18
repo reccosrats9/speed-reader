@@ -73,3 +73,15 @@ select{
   justify-content: center;
   align-items: center;
 }
+
+.speedAndPauseControls{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.speedAndPauseControls *{
+  margin: 10px;
+}
+
